@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ~/Desktop/_notes
+
+$SHELL

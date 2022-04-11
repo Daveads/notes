@@ -1,0 +1,43 @@
+[book]
+authors = ["daveads"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Davead's notes"
+description = "daveads personal notes"
+
+
+[rust]
+edition = "2018"
+
+
+
+[build]
+build-dir = "notes"
+create-missing = false
+site-url = "/notes/"
+git-repository-url = "https://github.com/Daveads/notes/tree/main/notes"
+
+
+[preprocessor.index]
+
+[preprocessor.links]
+
+
+[output.html]
+mathjax-support = true
+
+
+[output.html.playground]
+editable = true
+line-numbers = true
+
+
+[output.html.search]
+limit-results = 20
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 2
+boost-paragraph = 1
+expand = true
+heading-split-level = 2
