@@ -15,8 +15,6 @@ edition = "2018"
 [build]
 build-dir = "notes"
 create-missing = false
-site-url = "/notes/"
-git-repository-url = "https://github.com/Daveads/notes/tree/main/notes"
 
 
 [preprocessor.index]
@@ -26,6 +24,8 @@ git-repository-url = "https://github.com/Daveads/notes/tree/main/notes"
 
 [output.html]
 mathjax-support = true
+default-theme = "ayu"
+preferred-dark-theme = "navy"
 
 
 [output.html.playground]
