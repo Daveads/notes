@@ -1,0 +1,890 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Davead&#x27;s notes</title>
+                <meta name="robots" content="noindex" />
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="daveads personal notes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="favicon.svg">
+                        <link rel="shortcut icon" href="favicon.png">
+                <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+                <link rel="stylesheet" href="css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+                <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html"></a></li><li class="chapter-item expanded affix "><li class="part-title">NOTES</li><li class="chapter-item expanded "><a href="books/index.html"><strong aria-hidden="true">1.</strong> books</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="books/being-logical.html"><strong aria-hidden="true">1.1.</strong> being-logical</a></li><li class="chapter-item expanded "><a href="books/Do-the-work.html"><strong aria-hidden="true">1.2.</strong> Do-the-work</a></li><li class="chapter-item expanded "><a href="books/how-innovation-works.html"><strong aria-hidden="true">1.3.</strong> how-innovation-works</a></li><li class="chapter-item expanded "><a href="books/range.html"><strong aria-hidden="true">1.4.</strong> range</a></li><li class="chapter-item expanded "><a href="books/the-talent-code.html"><strong aria-hidden="true">1.5.</strong> the-talent-code</a></li><li class="chapter-item expanded "><a href="books/think-again-the-power-of-knowing-what-you-dont-know.html"><strong aria-hidden="true">1.6.</strong> think-again-the-power-of-knowing-what-you-dont-know</a></li><li class="chapter-item expanded "><a href="books/new-book/index.html"><strong aria-hidden="true">1.7.</strong> new-book</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="books/new-book/about-daveads.html"><strong aria-hidden="true">1.7.1.</strong> chapter1</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.2.</strong> chapter2</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.3.</strong> chapter3</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.4.</strong> chapter4</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.5.</strong> chapter5</div></li></ol></li></ol></li><li class="chapter-item expanded "><a href="human_lang/index.html"><strong aria-hidden="true">2.</strong> human_lang</a></li><li class="chapter-item expanded "><a href="physics/index.html"><strong aria-hidden="true">3.</strong> physics</a></li><li class="chapter-item expanded "><a href="others/index.html"><strong aria-hidden="true">4.</strong> others</a></li><li class="chapter-item expanded "><a href="workout/index.html"><strong aria-hidden="true">5.</strong> workout</a></li><li class="chapter-item expanded "><a href="piano/index.html"><strong aria-hidden="true">6.</strong> piano</a></li><li class="chapter-item expanded "><a href="weridq/index.html"><strong aria-hidden="true">7.</strong> weirdQ</a></li><li class="chapter-item expanded "><a href="learned/index.html"><strong aria-hidden="true">8.</strong> learned</a></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">Davead&#x27;s notes</h1>
+
+                    <div class="right-buttons">
+                                                <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="notes"><a class="header" href="#notes">Notes</a></h2>
+<p><strong>Needed a way keep track of all my readings</strong> &amp;&amp; and view them when needed</p>
+<p>I do have a <strong>physcial notes</strong> but they always end up some where i can't really keep track of</p>
+<p>This contains notes from books, videos, articles i have read or will be reading pretty soon.</p>
+<p>NOTICE!!!</p>
+<ul>
+<li><strong>I DON'T ALWAYS FINISH BOOKS TO THE END</strong></li>
+<li><strong>Am not going to always write notes on everything i read in a day so this will likely be 50-70% of my readings</strong></li>
+<li><strong>This for some reasons won't be in an orderly manner //will fix that later</strong></li>
+<li>loading....</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="books"><a class="header" href="#books">books</a></h1>
+<ul>
+<li><a href="books/being-logical.html">being-logical</a> — Creates a new book with minimal boilerplate to start with.</li>
+<li><a href="books/Do-the-work.html">do-the-work</a> — Renders the book.</li>
+<li><a href="books/watch.html"><code>mdbook watch</code></a> — Rebuilds the book any time a source file changes.</li>
+<li><a href="books/serve.html"><code>mdbook serve</code></a> — Runs a web server to view the book, and rebuilds on changes.</li>
+<li><a href="books/test.html"><code>mdbook test</code></a> — Tests Rust code samples.</li>
+<li><a href="books/clean.html"><code>mdbook clean</code></a> — Deletes the rendered output.</li>
+<li><a href="books/completions.html"><code>mdbook completions</code></a> — Support for shell auto-completion.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="being-logical-by-dq-mclnenry"><a class="header" href="#being-logical-by-dq-mclnenry">Being logical by D.Q. Mclnenry</a></h1>
+<ul>
+<li>Logic is the basis of our ability to think, analyze, argue and communicate.</li>
+</ul>
+<p>logic = clear and effective thinking
+// a science and an art.</p>
+<h1 id="part-one"><a class="header" href="#part-one">PART ONE</a></h1>
+<h2 id="preparing-the-mind-for-logic"><a class="header" href="#preparing-the-mind-for-logic">Preparing the mind for logic</a></h2>
+<ol>
+<li>
+<p>Be attentive:
+- mistake are caused by lack of paying attention, and also in familiar situations. every situation is unique.</p>
+<pre><code> Attention demands an active demands, energetic response to every situations, to the persons, places, and things that make up the situation. 
+ 
+ 
+ /**
+ 		Train your self to be focus on details
+ 		The little things are not to be ignored, for it is just the little things that lead us to the big things.
+ 		
+ **/
+</code></pre>
+</li>
+<li>
+<p>Get the Facts Straight:</p>
+<pre><code> a fact is something made or done. 
+ 
+ Types of objective facts: Things and Events
+</code></pre>
+</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="do-the-work-overcome-resistance-and-get-out-of-your-own-way"><a class="header" href="#do-the-work-overcome-resistance-and-get-out-of-your-own-way">Do the Work: Overcome Resistance and Get Out of Your Own Way</a></h1>
+<p><strong>ORIENTATION ENEMIES AND ALLIES</strong></p>
+<p>Enemies:{</p>
+<pre><code>	* resistance : fear, self-doubt, procastination, addiction, distraction, timidity, ego and narcissism, self-loathing, perfectionism, e.t.c
+	
+	* rational thoughts
+
+	* friends and family
+</code></pre>
+<p>}</p>
+<p><strong>war of art</strong> // am not reading that</p>
+<h2 id="resistance"><a class="header" href="#resistance">RESISTANCE</a></h2>
+<ul>
+<li>resistance is a force of nature </li>
+<li>resistance never sleep and fear doesn't go away</li>
+</ul>
+<p><strong>CODE:: THE BATTLE MUST BE FOUGHT ANEW EVERYDAY</strong></p>
+<h2 id="rational-thought"><a class="header" href="#rational-thought">Rational thought</a></h2>
+<pre><code>The Greeks’ greatest poet understood that genius did not reside within his
+fallible, mortal self—but came to him instead from some source that he
+could neither command nor control, only invoke.
+</code></pre>
+<p><strong>the deeper the source we work from, the better our stuff will be and the more tranformative it will be for us and for those we share it with.</strong></p>
+<h2 id="friends-and-family"><a class="header" href="#friends-and-family">Friends and Family</a></h2>
+<p>THOUGHTS**</p>
+<p><strong>so true, the last thing anyone would want is to remain as they are</strong></p>
+<h2 id="our-allies"><a class="header" href="#our-allies">OUR ALLIES</a></h2>
+<ol>
+<li>Stupidity</li>
+<li>Stubbornness</li>
+<li>Blind faith</li>
+<li>Passion</li>
+<li>Assistance (the opposite of Resistance)</li>
+<li>Friends and family</li>
+</ol>
+<p><strong>STAY STUPID</strong></p>
+<pre><code>A child has no trouble believing the unbelievable, nor does the genius or the madman. It’s only you and I, with our big brains and our tiny hearts, who doubt and overthink and hesitate.
+
+</code></pre>
+<ul>
+<li>Don't think act <strong>We can always revise and revisit once we’ve acted. But we can accomplish</strong>
+nothing until we act.</li>
+</ul>
+<p><strong>Be Stubborn</strong></p>
+<p>One we commit to action, the worst thing we can do is stop. 
+/** stubborness keeps us for stopping **/</p>
+<pre><code>we will sink our junkyard-dog teeth into resistance's ass and not let go, no matter how hard he kicks.
+
+</code></pre>
+<p><strong>BLIND FAITH</strong></p>
+<pre><code>Our mightiest ally (our indispensable ally) is belief
+in something we cannot see, hear, touch, taste, or
+feel.
+
+</code></pre>
+<p>Imagine a box with a lid. Hold the box in your hand. Now open it.</p>
+<p>What’s inside?</p>
+<p><strong>with unshakeable faith that there will always be something in the box.</strong></p>
+<p><strong>PASSION</strong></p>
+<ul>
+<li>fear saps passion</li>
+</ul>
+<p><strong>Friends and Family</strong></p>
+<p>// This part seems very important</p>
+<pre><code>
+When art and inspiration and success and fame and money have come and
+gone, who still loves us—and whom do we love?
+
+
+**Only two things will remain with us across the river: our inhering genius and the hearts we love.**
+
+what we do and whom we do it for. ?
+
+</code></pre>
+<p>Chapter 1</p>
+<p><strong>BEGINNING</strong></p>
+<p><em>Start before you are ready</em></p>
+<ul>
+<li>don't prepare begin</li>
+</ul>
+<pre><code> our enemy is not lack of preparation;
+ it’s not the difficulty of the project or the state of the
+ marketplace or the emptiness of our bank account.
+
+</code></pre>
+<p>The enemy is the resistance. <strong>The enemy is our chatting brain</strong></p>
+<p>when we start before we are ready we show <em>huevos</em> , our blood heats up, courage begets more courae.</p>
+<p><strong>Until one is committed, there is hesitancy, chance to draw back, always ineffectiveness.</strong></p>
+<pre><code> Concerning all acts of initiative (and creation),
+ there is one elementary truth, the ignorance of which kills countless
+ ideas and splendid plans: that the moment one definitely commits
+ oneself, then Providence moves too.
+
+</code></pre>
+<p><strong>Goethe’s couplets: “Whatever you can do or dream you can, begin it. Boldness has genius, power and magic in it.” Begin it now.</strong></p>
+<h2 id="a-research-diet"><a class="header" href="#a-research-diet">A Research Diet</a></h2>
+<ul>
+<li>Research can become Resistance. We want to work, not prepare to work.</li>
+</ul>
+<ol>
+<li>
+<p>stay primitive:</p>
+<pre><code> The creative act is primitive. Its principles are of birth and genesis.
+ 
+ &quot;&quot;&quot;
+ Babies are born in blood and chaos; stars and
+ galaxies come into being amid the release of massive
+ primordial cataclysms.
+ &quot;&quot;&quot;
+ 
+ 
+ * it better to be primitive than to be sophisticated, and better to be stupid than smart.
+ 
+ &quot;&quot;&quot;
+ The most highly cultured mother gives birth
+ sweating and dislocated and cursing like a sailor.
+ 
+ &quot;&quot;&quot;
+ 
+ That’s the place we inhabit as artists and innovators. It’s the place we must become comfortable with.
+ 
+ 
+ **The hospital room may be spotless and sterile, but birth itself will always take place amid chaos, pain ,and blood.**
+</code></pre>
+</li>
+<li>
+<p>Swing for the seats</p>
+<ul>
+<li>dont work small</li>
+</ul>
+<pre><code> &quot;&quot;&quot;
+ Start playing from power. We can always dial it back later. If we don’t
+ swing for the seats from the start, we’ll never be able to drive a fastball into
+ the upper deck.
+ &quot;&quot;&quot;
+</code></pre>
+</li>
+<li>
+<p>Lunch with my Mentor</p>
+<ul>
+<li>don't overthink
+* don't overprepare
+* Don’t let research become Resistance.
+* Don’t spend six months compiling shits*</li>
+</ul>
+<pre><code> Discipline yourself to boil down your story/new business/philanthropic enterprise to a single page.
+</code></pre>
+</li>
+<li>
+<p>How Leonardo Did It</p>
+<ol>
+<li>Supper table stretching across the width of the canvas.
+2. Jesus standing in the center, apostles arrayed in various postures left and right.	
+3. Perspective and background tailing off behind.</li>
+</ol>
+<ul>
+<li>That’s all Mr. Da V needed to start. The rest is details.*</li>
+</ul>
+</li>
+</ol>
+<h2 id="thats-why-they-call-it-rewriting"><a class="header" href="#thats-why-they-call-it-rewriting"><strong>That’s Why They Call It Rewriting</strong></a></h2>
+<pre><code>There is no such thing as writing, only rewriting. 
+
+</code></pre>
+<p><strong>Get your idea down on paper. you can always tweak it later</strong></p>
+<h2 id="start-at-the-end"><a class="header" href="#start-at-the-end">start at the end</a></h2>
+<p>E.g.
+* focus on the users experience
+* major required features</p>
+<p><strong>If you’re preparing a seduction, determine the state of mind you want the process of romancing to bring your lover to.</strong></p>
+<pre><code>	&quot;&quot;&quot;
+	Figure out where you want to go; then work
+	backwards from there.
+	&quot;&quot;&quot;
+</code></pre>
+<h2 id="thoughts-and-chatter"><a class="header" href="#thoughts-and-chatter">Thoughts and Chatter</a></h2>
+<p>Chatter:
+when you shift your consciousness to a witnessing mode and to watch thoughts arise, float across your awareness, and then drift away, to be replaced by the next thought and the thought after that.</p>
+<pre><code>Don’t think : according the writers means don’t listen to the chatter. Pay no attention to those rambling, disjointed images and notions that drift across the movie screen of your mind.
+
+</code></pre>
+<p>chatter == resistance</p>
+<p><strong>Ready to Rock and Roll</strong></p>
+<ol>
+<li>Stay primitive.</li>
+<li>Trust the soup.</li>
+<li>Swing for the seats.</li>
+<li>Be ready for Resistance.</li>
+</ol>
+<p>Chapter 2</p>
+<h2 id="the-universe-is-not-indifferent"><a class="header" href="#the-universe-is-not-indifferent">The Universe is not indifferent</a></h2>
+<p>when we decide to crate anything----------science, tech or to advance in the direction of a higher , nobler version of ourselves, we uncork from the universe, ineluctably, an equal and opposite reaction.</p>
+<p>That reaction is Resistance </p>
+<p>&quot;&quot;&quot;
+Resistance is an active, intelligent, protean malign force---tireless, relentles whose sole object is to stop us from becoming our best selves and from achieving our higher goals.
+&quot;&quot;&quot;</p>
+<p><strong>The universe is not indifferant. it is actively hostile.</strong></p>
+<pre><code>We can never eliminate Resistance. It will never
+go away. But we can outsmart it, and we can enlist
+allies that are as powerful as it is.
+
+</code></pre>
+<p><strong>One thing not permited to do is take resistance lightly</strong></p>
+<h2 id="fill-in-the-gaps"><a class="header" href="#fill-in-the-gaps">FILL IN THE GAPS</a></h2>
+<p>&quot;&quot;&quot;
+Any project or enterprise can be broken down into
+beginning, middle, and end. Fill in the gaps; then fill
+in the gaps between the gaps.
+&quot;&quot;&quot;</p>
+<h2 id="cover-the-canvas"><a class="header" href="#cover-the-canvas">Cover the Canvas</a></h2>
+<p>&quot;&quot;&quot;
+One rule for first full working drafts: get them
+done ASAP.
+&quot;&quot;&quot;</p>
+<p><strong>Don’t worry about quality. Act, don’t reflect. Momentum is everything.</strong></p>
+<p>Get the first version of your project done from A to Z as fast as you can.</p>
+<h2 id="suspend-all-self-judgment"><a class="header" href="#suspend-all-self-judgment">Suspend All Self-Judgment</a></h2>
+<p><strong>Unless you’re building a sailboat or the Taj Mahal, I give you a free pass to screw up as much as you like.</strong>
+//This seems more like software</p>
+<p>&quot;&quot;&quot;
+Only one thing matters in this initial draft: get SOMETHING done,
+however flawed or imperfect.
+&quot;&quot;&quot; </p>
+<p>perfectionism == &quot;resistance&quot; </p>
+<hr />
+<h2 id="thoughts"><a class="header" href="#thoughts">THOUGHTS</a></h2>
+<p>/**
+Fucking perfection</p>
+<p>But</p>
+<p>This can't be possible for all cases e.g. working on a [security, health, space] related software </p>
+<p>i guess that's why testing is important or some sort of stimulation
+**/</p>
+<h2 id="the-crazier-the-better"><a class="header" href="#the-crazier-the-better">The Crazier the better</a></h2>
+<p><strong>suspending self-judjement doesn't just mean blowing off the the &quot;you suck&quot; voice means libration from conventional expectation</strong></p>
+<pre><code>Stay stupid. Follow your unconventional, crazy
+heart.
+</code></pre>
+<h2 id="ideas-do-not-come-linearly"><a class="header" href="#ideas-do-not-come-linearly">Ideas Do Not Come Linearly</a></h2>
+<pre><code>Ideas come according to their own logic. That
+logic is not rational. It’s not linear. We may get the
+middle before we get the end. We may get the end
+before we get the beginning. Be ready for this. Don’t
+resist it.
+</code></pre>
+<pre><code>Nothing is more fun than turning on the recorder
+and hearing your own voice telling you a fantastic
+idea that you had completely forgotten you had.
+</code></pre>
+<h2 id="the-process"><a class="header" href="#the-process">The Process</a></h2>
+<p>the idea generation process is in two stages</p>
+<ul>
+<li>Action </li>
+<li>Reflection</li>
+</ul>
+<p>// never act and reflect at the same time</p>
+<h2 id="the-definition-of-action-and-reflection"><a class="header" href="#the-definition-of-action-and-reflection">The Definition of Action and Reflection</a></h2>
+<p>In writing, “action” means putting words on paper. //writing the code</p>
+<p>“Reflection” means evaluating what we have on paper. // testing</p>
+<p>“Stay Stupid,” :: mean don’t self-censor, don’t indulge in self-doubt, don’t permit self-judgment.</p>
+<pre><code>Forget rational thought. Play. Play like a child.
+
+</code></pre>
+<p>&quot;&quot;&quot;
+Our job is not to control our idea; our job is to
+figure out what our idea is (and wants to be)—and
+then bring it into being.
+&quot;&quot;&quot;</p>
+<p><strong>Bob Dylan’s Chronicles</strong> ????</p>
+<h2 id="the-answer-is-always-yes"><a class="header" href="#the-answer-is-always-yes">The Answer Is Always Yes</a></h2>
+<p>When an idea pops into our head and we think, “No, this is too crazy,”
+… that’s the idea we want.</p>
+<p>When we think, “This notion is completely off the wall … should I even
+take the time to work on this?”
+… the answer is yes.</p>
+<p>Never doubt the soup. Never say no.
+The answer is always yes.</p>
+<h2 id="the-opposite-of-resistance"><a class="header" href="#the-opposite-of-resistance">The Opposite of Resistance</a></h2>
+<pre><code>The universe is also actively benevolent. You
+should be feeling this now. You should be feeling a
+tailwind.
+</code></pre>
+<p><strong>The opposite of Resistance is Assistance.</strong></p>
+<pre><code>A work-in-progress generates its own energy field.
+You, the artist or entrepreneur, are pouring love into
+the work; you are suffusing it with passion and
+intention and hope. This is serious juju. The universe
+responds to this. It has no choice.
+
+</code></pre>
+<p>&quot;&quot;&quot;
+Your work-in-progress produces its own gravitational field, created by your
+will and your attention. This field attracts like-spirited entities into its orbit.
+&quot;&quot;&quot;</p>
+<h2 id="ideas"><a class="header" href="#ideas">ideas</a></h2>
+<pre><code>Assistance is the universal, immutable force of
+creative manifestation, whose role since the Big Bang
+has been to translate potential into being, to convert
+dreams into reality.
+</code></pre>
+<h2 id="keep-working"><a class="header" href="#keep-working">Keep Working</a></h2>
+<hr />
+<p>How much time can you spare each day?</p>
+<h2>For that interval, close the door and—short of a family emergency or the
+outbreak of World War III—don’t let ANYBODY in.</h2>
+<h2 id="keep-working-part-two"><a class="header" href="#keep-working-part-two">Keep Working, Part Two</a></h2>
+<p>'''
+Ignore false negatives. Ignore false positives. Both are Resistance.
+'''</p>
+<h2 id="actreflect-part-two"><a class="header" href="#actreflect-part-two">Act/Reflect, Part Two</a></h2>
+<p>Keep refining your understanding of the theme; keep narrowing it down</p>
+<pre><code>Pause and reflect. “What is this project
+about?” “What is its theme?” “Is every element serving that theme?”
+</code></pre>
+<h2 id="fill-in-the-gaps-part-two"><a class="header" href="#fill-in-the-gaps-part-two">Fill in the Gaps, Part Two</a></h2>
+<p><strong>Ask yourself what’s missing. Then fill that void.</strong></p>
+<h2 id="now-were-rolling"><a class="header" href="#now-were-rolling">Now We’re Rolling</a></h2>
+<p>'''
+weeks into projects when this start getting interesting
+'''</p>
+<p><strong>THE WALL</strong></p>
+<p>// when we hit the wall <strong>no progress</strong></p>
+<p>&quot;&quot;&quot;
+That “You suck” voice is back, howling in our
+head.
+&quot;&quot;&quot;</p>
+<p>&quot;&quot;&quot;
+We’re poised at the brink of a creative
+breakthrough and we can’t stand it. The prospect of
+success looms. We freak. Why did we start this
+project? We must have been insane. Who encouraged
+us? We want to wring their necks. Where are they
+now? Why can’t they help us?
+&quot;&quot;&quot;</p>
+<h2 id="the-belly-of-the-beast"><a class="header" href="#the-belly-of-the-beast">THE BELLY OF THE BEAST</a></h2>
+<pre><code>	**WELCOME TO HELL**
+</code></pre>
+<h2 id="principle-number-one-there-is-an-enemy"><a class="header" href="#principle-number-one-there-is-an-enemy">Principle Number One: There Is an Enemy</a></h2>
+<p>There is an enemy. There is an intelligent, active,
+malign force working against us.</p>
+<p><strong>Step one is to recognize this.</strong></p>
+<p>This recognition alone is enormously powerful. It
+saved my life, and it will save yours.</p>
+<p>// i don't know where this is headed yet</p>
+<h2 id="principle-number-two-this-enemy-is-implacable"><a class="header" href="#principle-number-two-this-enemy-is-implacable">principle Number Two: This Enemy is Implacable</a></h2>
+<pre><code>Its aim is not to obstruct or to hamper or to
+impede. Its aim is to kill.
+
+</code></pre>
+<h2 id="principle-number-three-this-enemy-is-inside-you"><a class="header" href="#principle-number-three-this-enemy-is-inside-you">principle number Three: This Enemy is Inside you</a></h2>
+<p><strong>&quot;peripheral opponents.&quot;</strong> : ~according to a former coach of the Laker <strong>pat riley</strong></p>
+<p>is fame and ego (not to mention crazed fans, the press, agents, sponsors and ex-wives) works against the players chances for on-court success.</p>
+<p>&quot;&quot;&quot;
+Resistance is not a peripheral opponent. It does not arise from rivals,
+bosses, spouses, children, terrorists, lobbyists, or political adversaries.
+&quot;&quot;&quot;</p>
+<p><strong>All this comes from us</strong></p>
+<h2 id="principle-number-four-the-enemy-is-inside-you-but-it-is-not-you"><a class="header" href="#principle-number-four-the-enemy-is-inside-you-but-it-is-not-you">Principle Number Four: The Enemy Is Inside You, But It Is Not You</a></h2>
+<p>&quot;&quot;
+What does that mean? It means you are not to
+blame for the voices of Resistance you hear in your
+head.
+&quot;&quot;</p>
+<p><strong>If you’ve got a head, you’ve got a voice of Resistance inside it.</strong></p>
+<h2 id="principle-number-five-the-real-you-must-duel-the-resistance-you"><a class="header" href="#principle-number-five-the-real-you-must-duel-the-resistance-you">Principle Number Five: The “Real You” Must Duel the “Resistance You”</a></h2>
+<p>You are the knight.</p>
+<p>Resistance is the dragon.</p>
+<h2 id="principle-number-six-resistance-arises-second"><a class="header" href="#principle-number-six-resistance-arises-second">Principle Number Six: Resistance Arises Second</a></h2>
+<p>The sixth principle of Resistance (and the key to overcoming it) is that
+Resistance arises second.</p>
+<p>&quot;&quot;&quot;
+What comes first is the idea, the passion, the
+dream of the work we are so excited to create that it
+scares the hell out of us.
+&quot;&quot;&quot;</p>
+<p>Resistance is the response of the frightened, petty, small-time ego to the
+brave, generous, magnificent impulse of the creative self.</p>
+<pre><code>It means that before the dragon of Resistance
+reared its ugly head and breathed fire into our faces,
+there existed within us a force so potent and life-
+affirming that it summoned this beast into being,
+perversely, to combat it.
+</code></pre>
+<p><strong>Resistance is more like the pain-in-the-ass schoolteacher who won’t let us climb that tree in the playground</strong></p>
+<p>&quot;&quot;&quot;
+Love for the material, love for the work, love for
+our brothers and sisters to whom we will offer our
+work as a gift.
+&quot;&quot;&quot;</p>
+<p><strong>In Greek, the word is eros. Life force. Dynamis, creative drive.</strong></p>
+<p><strong>// when face with resistance remember why you started</strong></p>
+<p><strong>Principle Number Seven: The Opposite of Resistance Is Assistance</strong></p>
+<p>//stuffs that could cross your mind #resistance</p>
+<p>&quot;&quot;&quot;
+“You’re too young, you’re too inexperienced; you’ve got no credentials, no
+credibility. Everyone who’s tried this has failed and you will, too. It can’t be
+done. Your plane will crash, you’re going to drown, you’re a madman who
+is attempting the impossible and you deserve whatever dire fate befalls
+you!”
+&quot;&quot;&quot;</p>
+<ul>
+<li>love the idea</li>
+</ul>
+<pre><code>The seventh principle of Resistance is that we can align ourselves with
+these universal forces of Assistance—this dream, this passion to make the
+unmanifest manifest—and ride them into battle against the dragon.
+</code></pre>
+<h2 id="resistances-two-tests"><a class="header" href="#resistances-two-tests">Resistance’s Two Tests</a></h2>
+<p>Test number one : </p>
+<ul>
+<li>how bad do you want it ?</li>
+</ul>
+<p>&quot;&quot;&quot;
+Dabbling • Interested • Intrigued but Uncertain • Passionate • Totally
+Committed
+&quot;&quot;&quot;</p>
+<p>Test Number Two :</p>
+<ul>
+<li>why do you want it ?</li>
+</ul>
+<hr />
+<ol>
+<li>For the babes (or the dudes)</li>
+<li>The money</li>
+<li>For fame</li>
+<li>Because I deserve it</li>
+<li>For power</li>
+<li>To prove my old man (or ex-spouse, mother, teacher, coach) wrong</li>
+<li>To serve my vision of how life/mankind ought to be</li>
+<li>For fun or beauty</li>
+<li>Because I have no choice</li>
+</ol>
+<hr />
+<p>8,9 </p>
+<h2 id="the-attitude-adjustment-chamber"><a class="header" href="#the-attitude-adjustment-chamber">The Attitude Adjustment Chamber</a></h2>
+<p>Things you don't get to keep :</p>
+<ul>
+<li>
+<p>Your ego</p>
+</li>
+<li>
+<p>Your sense of entitlement</p>
+</li>
+<li>
+<p>Your impatience</p>
+</li>
+<li>
+<p>Your fear</p>
+</li>
+<li>
+<p>Your hope</p>
+</li>
+<li>
+<p>Your anger</p>
+</li>
+<li>
+<p>All grievances related to aspects of yourself dependent on the accident of birth.</p>
+</li>
+<li>
+<p>All sense of personal exceptionalness dependent on the accident of birth.</p>
+</li>
+</ul>
+<pre><code>The only items you get to keep are love for the
+work, will to finish, and passion to serve the ethical
+
+</code></pre>
+<h1 id="ch-3"><a class="header" href="#ch-3">ch 3</a></h1>
+<h3 id="the-big-crash"><a class="header" href="#the-big-crash">THE BIG CRASH</a></h3>
+<p>&quot;&quot;&quot;
+The Big Crash is so predictable, across all fields of
+enterprise, that we can practically set our watches by
+it.
+&quot;&quot;&quot;</p>
+<h3 id="ringing-the-bell"><a class="header" href="#ringing-the-bell">Ringing The Bell</a></h3>
+<p>Just like the Navy silly training // US military, we also have a bell hanging over us</p>
+<p>&quot;&quot;&quot;
+Ring the bell if ready to quit or drop out
+&quot;&quot;&quot;</p>
+<p>There’s a difference between Navy SEAL training and what you and I are facing now.</p>
+<p><strong>Our ordeal is harder. Because we're alone</strong></p>
+<h2 id="crashes-are-good"><a class="header" href="#crashes-are-good">CRASHES ARE GOOD</a></h2>
+<p><strong>Crashes are hell, but in the end they’re good for us.</strong></p>
+<p><strong>A crash means we have failed. We gave it everything we had and we came up short. A crash does not mean we are losers.</strong></p>
+<ul>
+<li>
+<p>a crash mean we have to grow</p>
+</li>
+<li>
+<p>a crash means we are at the threshold of learning something //means we're getting better, aquiring the wisdom of our craft.</p>
+</li>
+<li>
+<p>it compels us to figure what works and what does'nt , and to understand the diff</p>
+</li>
+</ul>
+<p>&quot;&quot;&quot;
+We got ourselves into this mess by mistakes we made at the start. How?
+Were we lazy? Inattentive? Did we mean well but forget to factor in human
+nature? Did we assess reality incorrectly?
+&quot;&quot;&quot;</p>
+<hr />
+<h2>Whatever the cause, the Big Crash compels us to
+go back now and solve the problem that we either
+created directly or set into motion unwittingly at the
+outset.</h2>
+<h2 id="panic-is-good"><a class="header" href="#panic-is-good">Panic Is Good</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="how-innovation-works"><a class="header" href="#how-innovation-works">HOW INNOVATION WORKS</a></h3>
+<ul>
+<li>
+<p>Innovation is potentially infinite because even if it runs out of new things to do, it can always find ways to do the same things more quickly or for less energy.</p>
+</li>
+<li></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h3 id="the-talent-code"><a class="header" href="#the-talent-code">The Talent code</a></h3>
+<hr />
+<h2 id="riff-and-licks"><a class="header" href="#riff-and-licks">riff and lick's</a></h2>
+<p>Neural insulator called <strong>myelin</strong>............???</p>
+<p>Human Skills are created by chains of nerve fibers carrying a tiny electrical impulse.. <strong>myelin wraps those nerve fibers</strong>, making the signal stronger and faster preventing leakage.</p>
+<p>When we fire our circuits the right way --when we practice playing that notes<br>
+Our myelin responds by wrapping layers of insulation around that neural circuit, each new layer adding a bit more skill and speed.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="rethink-is-a-skill-set-but-also-a-mindset"><a class="header" href="#rethink-is-a-skill-set-but-also-a-mindset">rethink is a skill set but also a mindset...</a></h2>
+<p>Mike Lazaridis.........??</p>
+<hr />
+<p><strong>we often slip into the mindsets of three dff professions:</strong></p>
+<ul>
+<li>Preachers - when our sarcred belefs are in jeopardy</li>
+<li>prosecutors - when we recognize flaws in other people's reasoning</li>
+<li>politicians - when we're seeking to win over an audience.</li>
+</ul>
+<h2 id="-not-thinging-about-our-own-views"><a class="header" href="#-not-thinging-about-our-own-views">// not thinging about our own views...</a></h2>
+<h2 id="intelligence"><a class="header" href="#intelligence">Intelligence:</a></h2>
+<ul>
+<li>is traditionally viewed as the ability to think and learn</li>
+</ul>
+<p><strong>the ability to rethink and unlearn</strong> </p>
+<p>first-instinct fallacy.....??</p>
+<h2 id="we-hesitate-at-the-very-idea-of-rethinking"><a class="header" href="#we-hesitate-at-the-very-idea-of-rethinking">we hesitate at the very idea of rethinking....</a></h2>
+<p><strong>causes...::</strong></p>
+<ul>
+<li>cognitive laziness...</li>
+<li>questioning ourseles make the world unpredictable.</li>
+<li>it requires us to admit that the facts might have changed.</li>
+<li>reconsidering something we belive deeply can threaten our identity.</li>
+</ul>
+<p>seizing and freezing..........??(Psychologist)</p>
+<h2 id="a-different-pair-of-goggles"><a class="header" href="#a-different-pair-of-goggles">A different pair of goggles</a></h2>
+<p>// rethinking is fundamental to <strong>scientist</strong> profession.</p>
+<ul>
+<li>paid to constantly aware the limits of your understanding</li>
+<li>expected to doubt what you know, be curious about what you don’t know, and update your views based on new data.</li>
+</ul>
+<p>// This is a way of thinking that differ from p^3</p>
+<p>// <strong>sometimes even great scientist need to think more like scientists...</strong></p>
+<h2 id="the-smarter-they-are-the-harder-they-fail"><a class="header" href="#the-smarter-they-are-the-harder-they-fail">The smarter they are, the harder they fail...</a></h2>
+<ul>
+<li>
+<p>Mental horsepower doesn’t guarantee mental dexterity.</p>
+</li>
+<li>
+<p>the smarter you are the more you might struggle to update your beliefs.
+<strong>Two bias that drives this pattern</strong>
+- confirmation bias : seeing what you expect.
+- desirability bias : seeing what we want..
+{ giving reasons to preach, prosecute and winning people over.. P^3 }</p>
+<pre><code>  // and unaware of resulting flaws in our thinking...
+</code></pre>
+</li>
+<li>
+<p>Thinking like a scientist involves being actively open-minded.
+// requires search for reasons why we might be wrong and not right...</p>
+</li>
+</ul>
+<ul>
+<li>preacher mode -: changing minds is a mark of moral weakness.</li>
+<li>scientist mode -: a sign of intellectual integrity, a step towards truth.</li>
+<li>prosecutor mode -: allowing oneselve to be persuaded is admitting defeat.</li>
+<li>politician mode -: </li>
+</ul>
+<ul>
+<li>purpose of learning is'nt to affirm our beliefs; it's to evolve our beliefs..</li>
+</ul>
+<h2 id="presidential-greatness"><a class="header" href="#presidential-greatness">presidential greatness</a></h2>
+<p><strong>what set great presidents apart was their intellectual curiosity and openness and how widely they read</strong></p>
+<h2 id="dont-stop-unbelieving"><a class="header" href="#dont-stop-unbelieving">Don't Stop unbelieving</a></h2>
+<ul>
+<li>rethinking starts with intellectual humillity - knowing what we don't know. &amp; and should be able to make a long list of areas where we are ignorant.</li>
+</ul>
+<hr />
+<ul>
+<li>as we question our current understanding we become curious about information we are missing.. this leads us to new discoveries. which in turn maintain our humility by reinforcing how much we still have to learn.</li>
+</ul>
+<hr />
+<ul>
+<li>scientific thinking favors humilty over pride, doubt ovrer certainty, curiosity over closure.</li>
+</ul>
+<p>//Thinking different != rethinking....</p>
+<h2 id="things-people-say-instead-of-rethinking"><a class="header" href="#things-people-say-instead-of-rethinking">Things people say instead of rethinking...</a></h2>
+<ul>
+<li>that will never work</li>
+<li>that's not what my exprience has shown..</li>
+<li>that's too complicated let not over think it..</li>
+<li>that's the way we have always done it...</li>
+</ul>
+<p>// research shows that when people are resistance to change, it helps to reinforce what will stay the same..</p>
+<p><strong>The curse of knowlegde is that it closes our mind to what we don't know.</strong></p>
+<h3 id="chapter-2"><a class="header" href="#chapter-2">CHAPTER 2</a></h3>
+<h1 id="the-armchair-quarter-back-and-the-imposter"><a class="header" href="#the-armchair-quarter-back-and-the-imposter">THE Armchair Quarter back and the imposter...</a></h1>
+<p>Anton’s syndrome...............??</p>
+<h1 id="the-ignorance-of-arrogance"><a class="header" href="#the-ignorance-of-arrogance">THE IGNORANCE OF ARROGANCE</a></h1>
+<p><strong>Dunning-Kruger effect....??</strong></p>
+<p>“The first rule of the Dunning-Kruger club is you don’t know you’re a member of the Dunning-Kruger club.&quot;</p>
+<h1 id="what-i-know"><a class="header" href="#what-i-know">What i know</a></h1>
+<p><strong>When we lack the knowledge and skills to achieve excellence, we sometimes lack the knowledge and skills to judge excellence.</strong></p>
+<ul>
+<li>
+<p>Advancing from novice to amateur can break the rethinking cycle. as we gain experince, we lose some of our humility. </p>
+</li>
+<li>
+<p>confidence is a measure of how much you believe in yourself.</p>
+</li>
+<li>
+<p>evidence shows that's distinct from how much you believe in your methods.</p>
+</li>
+</ul>
+<p>// we become blinded by arrogance when we're utterly convinced of our strengths and our strategies.</p>
+<p>inferiority complex....???</p>
+<hr />
+<h2 id="what-we-should-attain-is-confident-humility--having-faith-in-our-capability-while-appreciating-that-we-may-not-have-the-right-solution-or-even-be-addressing-the-right-problem"><a class="header" href="#what-we-should-attain-is-confident-humility--having-faith-in-our-capability-while-appreciating-that-we-may-not-have-the-right-solution-or-even-be-addressing-the-right-problem">What we should attain is <strong>&quot;Confident humility&quot;</strong> : having faith in our capability while appreciating that we may not have the right solution or even be addressing the right problem</a></h2>
+<h3 id="the-confidence-seet-spot"><a class="header" href="#the-confidence-seet-spot">THE CONFIDENCE SEET SPOT</a></h3>
+<p>// having confidence in the capacity to learn..</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="new-book"><a class="header" href="#new-book">new-book</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter1"><a class="header" href="#chapter1">chapter1</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="human_lang"><a class="header" href="#human_lang">human_lang</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="physics"><a class="header" href="#physics">physics</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="others"><a class="header" href="#others">others</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="workout"><a class="header" href="#workout">workout</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="piano"><a class="header" href="#piano">piano</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="weirdq"><a class="header" href="#weirdq">weirdQ</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="learned"><a class="header" href="#learned">learned</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                            </nav>
+
+        </div>
+
+        
+        
+                <script type="text/javascript">
+            window.playground_line_numbers = true;
+        </script>
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+                <script src="ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        
+                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+                        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+                
+    </body>
+</html>
