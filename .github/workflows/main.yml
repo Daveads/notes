@@ -39,7 +39,7 @@ jobs:
         rm -r scripts
         rm README.md
         rm book.toml
-        rm -r notes
+        #rm -r notes
         rm -r .git
         rm -r .github
         rm -r .gitignore
