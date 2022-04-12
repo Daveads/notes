@@ -31,7 +31,8 @@ jobs:
         git update-ref -d refs/heads/gh-pages
         ls
         rm -rf *
-        mv notes/* .
+        ls
+        #mv notes/* .
         git add .
         git commit -m "Deploy $GITHUB_SHA to gh-pages"
         git push --force
