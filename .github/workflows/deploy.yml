@@ -24,6 +24,7 @@ jobs:
         git branch gh-pages
         git reset --hard
         git worktree add main gh-pages
+        git checkout gh-pages
         git config user.name "Deploy from CI"
         git config user.email ""
         #cd gh-pages
