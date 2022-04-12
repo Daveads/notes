@@ -23,7 +23,7 @@ jobs:
         mdbook build
         git branch gh-pages
         git reset --hard
-        git worktree add notes gh-pages
+        #git worktree add notes gh-pages
         git config user.name "Deploy from CI"
         git config user.email ""
         cd gh-pages
