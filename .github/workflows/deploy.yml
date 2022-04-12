@@ -29,6 +29,7 @@ jobs:
         #cd gh-pages
         # Delete the ref to avoid keeping history.
         git update-ref -d refs/heads/gh-pages
+        ls
         rm -rf *
         mv ../notes/* .
         git add .
