@@ -30,6 +30,8 @@ jobs:
         git update-ref -d refs/heads/gh-pages
         ls
         rm -rf *
+        echo "checking"
+        ls
         mv ../book/* .
         git add .
         git commit -m "Deploy $GITHUB_SHA to gh-pages"
