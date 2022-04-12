@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd ~/Desktop/_notes
+cd ~/Desktop/notes/src
 
 $SHELL
