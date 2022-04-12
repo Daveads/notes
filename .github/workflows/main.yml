@@ -33,6 +33,16 @@ jobs:
         echo "checking"
         ls
         mv ../notes/* .
+        
+        
+        # why doesn't github just have a terminal via there interface 
+        # files && folder not needed
+        rm -r src
+        rm -r scripts
+        rm README.md
+        rm book.toml
+        rm -r notes
+
         git add .
         git commit -m "Deploy $GITHUB_SHA to gh-pages"
         git push --force
