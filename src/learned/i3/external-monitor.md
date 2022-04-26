@@ -15,7 +15,15 @@ HDMI1 connected 1080x1920+1366+0 left (normal left inverted right x axis y axis)
 ------------------------------------------------------------
 position out right of primary screen
 
+// horizontal position 
 xrandr --output HDMI1 --auto --right-of eDP1
+
+
+// vertical position
+xrandr --output HDMI1 --rotate left --right-of eDP1
+
+
+xrandr --output HDMI1 --rotate left --auto --right-of eDP1
 ------------------------------------------------------------
 
 
