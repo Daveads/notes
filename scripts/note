@@ -2,4 +2,5 @@
 
 cd ~/Desktop/notes/src
 
+# mdbook serve --open
 $SHELL
